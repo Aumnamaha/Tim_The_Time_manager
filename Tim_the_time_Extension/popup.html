@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Tim - The Time Extension</title>
+  <link rel="stylesheet" href="css/popup.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="header-logo">
+        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+        <h1>Tim</h1>
+      </div>
+      <p class="subtitle">Your mindful browsing companion</p>
+    </header>
+
+    <main>
+      <div class="stats-card">
+        <h2>Time Tracked Today</h2>
+        
+        <div id="stats-container">
+          <!-- Dynamically populated from JS -->
+          <div class="loading">Loading stats...</div>
+        </div>
+        
+        <div class="total-summary">
+          <span>Total distracting time:</span>
+          <span id="total-time">0h 0m</span>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <p>Stay focused, stay healthy.</p>
+    </footer>
+  </div>
+  <script src="js/popup.js"></script>
+</body>
+</html>
