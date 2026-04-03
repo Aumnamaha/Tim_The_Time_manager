@@ -1,0 +1,108 @@
+/* =========================================
+   TIM CONTENT OVERLAY — CREAM / SANDAL PALETTE
+   ========================================= */
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;800&family=Playfair+Display:ital,wght@0,700;1,600&display=swap');
+
+#tim-wellness-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(245, 234, 217, 0.6);
+  backdrop-filter: blur(10px);
+  z-index: 999999999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Outfit', system-ui, -apple-system, sans-serif;
+  opacity: 0;
+  animation: timFadeIn 0.4s ease forwards;
+  pointer-events: all;
+}
+
+#tim-card {
+  background: #FFFFFF;
+  border: 1px solid #EED9BB;
+  box-shadow: 0 24px 64px rgba(192, 139, 92, 0.25), 0 8px 24px rgba(192, 139, 92, 0.15);
+  border-radius: 28px;
+  padding: 44px 40px;
+  max-width: 480px;
+  width: 90%;
+  text-align: center;
+  transform: translateY(28px);
+  animation: timSlideUp 0.55s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* 3-part display */
+#tim-card h1 {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 22px;
+  font-weight: 700;
+  margin: 0 0 18px 0;
+  color: #2D1F0F;
+}
+
+#tim-message {
+  font-size: 18px;
+  line-height: 1.65;
+  color: #5C4033;
+  margin-bottom: 32px;
+  font-weight: 400;
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+}
+
+/* 8-part interactive — the main button */
+#tim-close-btn {
+  background: #C08B5C;
+  color: #FFFFFF;
+  border: none;
+  padding: 14px 28px;
+  border-radius: 14px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  font-family: 'Outfit', sans-serif;
+  transition: all 0.22s ease;
+  box-shadow: 0 4px 20px rgba(192, 139, 92, 0.35);
+  width: 100%;
+}
+
+#tim-close-btn:hover {
+  background: #A0714A;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 28px rgba(192, 139, 92, 0.5);
+}
+
+#tim-close-btn:active {
+  transform: translateY(1px);
+  box-shadow: 0 2px 8px rgba(192, 139, 92, 0.3);
+}
+
+/* Top accent stripe */
+#tim-card::before {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 4px;
+  background: linear-gradient(to right, #E4C99A, #C08B5C);
+  border-radius: 4px;
+  margin: 0 auto 24px;
+}
+
+@keyframes timFadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes timSlideUp {
+  from { transform: translateY(28px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes timFadeOut {
+  from { opacity: 1; }
+  to { opacity: 0; }
+}

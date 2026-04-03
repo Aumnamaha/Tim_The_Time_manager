@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Tim - Your mindful browsing companion. Track time spent on YouTube, Instagram and Facebook. Get fitness reminders every 40 minutes." />
+  <title>Tim – The Mindful Time Extension</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="#" class="nav-logo">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+        Tim
+      </a>
+      <ul class="nav-links">
+        <li><a href="#features">Features</a></li>
+        <li><a href="#how-it-works">How it works</a></li>
+        <li><a href="#messages">Reminders</a></li>
+      </ul>
+      <a href="#download" class="btn-nav">Download Free</a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="hero-content">
+      <div class="hero-badge">🌿 Free · No data collected · 100% local</div>
+      <h1 class="hero-title">
+        Take back your<br>
+        <span class="accent-text">screen time.</span>
+      </h1>
+      <p class="hero-subtitle">
+        Tim quietly watches over your scrolling habits on YouTube, Instagram and Facebook —
+        then gently reminds you to take a break, hydrate, and move your body.
+      </p>
+      <div class="hero-actions">
+        <a href="#download" class="btn-primary" id="hero-download-btn">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          Add to Chrome — Free
+        </a>
+        <a href="#how-it-works" class="btn-secondary">See how it works</a>
+      </div>
+      <div class="hero-social-proof">
+        <div class="proof-item">
+          <span class="proof-num">3</span>
+          <span class="proof-label">Sites tracked</span>
+        </div>
+        <div class="proof-divider"></div>
+        <div class="proof-item">
+          <span class="proof-num">6+</span>
+          <span class="proof-label">Wellness reminders</span>
+        </div>
+        <div class="proof-divider"></div>
+        <div class="proof-item">
+          <span class="proof-num">0</span>
+          <span class="proof-label">Data sent anywhere</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="browser-mockup">
+        <div class="mockup-bar">
+          <div class="mockup-dots">
+            <span></span><span></span><span></span>
+          </div>
+          <div class="mockup-url">youtube.com/shorts</div>
+        </div>
+        <div class="mockup-screen">
+          <div class="mockup-overlay">
+            <div class="mockup-overlay-card">
+              <p class="mockup-overlay-title">⏸ Time to pause!</p>
+              <p class="mockup-overlay-msg">You've been scrolling for a while. Time to do 10 pushups! 💪</p>
+              <button class="mockup-overlay-btn">Got it, thanks Tim!</button>
+            </div>
+          </div>
+          <div class="mockup-content">
+            <div class="mkc-bar w80"></div>
+            <div class="mkc-bar w50"></div>
+            <div class="mkc-thumb"></div>
+            <div class="mkc-bar w70"></div>
+            <div class="mkc-bar w40"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURES -->
+  <section class="features" id="features">
+    <div class="section-inner">
+      <div class="section-label">What Tim does</div>
+      <h2 class="section-title">Your health matters more<br>than the algorithm.</h2>
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon">⏱️</div>
+          <h3>Precise Time Tracking</h3>
+          <p>Tim counts every second you spend on YouTube, Facebook or Instagram — even when you switch tabs. No shortcuts.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🔔</div>
+          <h3>Smart Reminders</h3>
+          <p>After 40 minutes, Tim shows a gentle full-screen card with a random health tip — right on the very page you're watching.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">💪</div>
+          <h3>6 Different Messages</h3>
+          <p>Pushups, water breaks, eye care, posture checks, walks, and more. Different every time so they never get stale.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🔒</div>
+          <h3>Fully Private</h3>
+          <p>All your data lives only in your browser's local storage. Tim never sends anything to any server — there is no server.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">📊</div>
+          <h3>Beautiful Dashboard</h3>
+          <p>Click Tim's icon to see a warm, minimal dashboard showing how much time you've spent per platform today.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">⚡</div>
+          <h3>Zero Performance Cost</h3>
+          <p>Built with Manifest V3 service workers — Tim runs in the background using virtually zero CPU or battery.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section class="how-it-works" id="how-it-works">
+    <div class="section-inner">
+      <div class="section-label">Setup in 1 minute</div>
+      <h2 class="section-title">Dead simple to get started.</h2>
+      <div class="steps-container">
+        <div class="step">
+          <div class="step-number">01</div>
+          <div class="step-content">
+            <h3>Download &amp; install from GitHub</h3>
+            <p>Download the ZIP from GitHub, extract it, open <strong>chrome://extensions</strong>, enable Developer Mode, and click <strong>Load unpacked</strong> to add Tim. Takes under a minute.</p>
+          </div>
+        </div>
+        <div class="step-connector"></div>
+        <div class="step">
+          <div class="step-number">02</div>
+          <div class="step-content">
+            <h3>Browse as usual</h3>
+            <p>Tim silently begins tracking the moment you visit YouTube, Facebook or Instagram. Nothing changes for you.</p>
+          </div>
+        </div>
+        <div class="step-connector"></div>
+        <div class="step">
+          <div class="step-number">03</div>
+          <div class="step-content">
+            <h3>Get gently reminded</h3>
+            <p>Every 40 minutes, a warm wellness card appears on screen. Dismiss it, do a few pushups, then keep scrolling — guilt free.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MESSAGES SHOWCASE -->
+  <section class="messages-section" id="messages">
+    <div class="section-inner">
+      <div class="section-label">What Tim says</div>
+      <h2 class="section-title">6 reminders, each totally different.</h2>
+      <!-- Single message slot — JS populates and animates this -->
+      <div class="messages-ticker" id="messages-ticker">
+        <span class="msg-icon" id="msg-icon">💪</span>
+        <p class="msg-text" id="msg-text">"Hey there! You've been scrolling for a while. Time to do 10 pushups!"</p>
+      </div>
+      <div class="ticker-dots" id="ticker-dots">
+        <span class="ticker-dot active" data-index="0"></span>
+        <span class="ticker-dot" data-index="1"></span>
+        <span class="ticker-dot" data-index="2"></span>
+        <span class="ticker-dot" data-index="3"></span>
+        <span class="ticker-dot" data-index="4"></span>
+        <span class="ticker-dot" data-index="5"></span>
+      </div>
+    </div>
+  </section>
+
+  <!-- INSTALL GUIDE -->
+  <section class="download-section" id="download">
+    <div class="section-inner">
+      <div class="section-label">Install in 5 steps</div>
+      <h2 class="section-title">You install it yourself.<br><span style="color:var(--sandal)">That's the whole point.</span></h2>
+      <p class="install-subtitle">No mystery installer. No account. Download the source code directly from GitHub, inspect every file if you want, and add it to your browser yourself. Total transparency.</p>
+
+      <div class="install-cta">
+        <a href="https://github.com/your-username/Tim_the_time_Extension/releases/latest/download/Tim_the_time_Extension.zip"
+           id="download-zip-btn" class="btn-primary btn-xl" target="_blank">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.2 11.38.6.1.82-.26.82-.57v-2c-3.34.72-4.04-1.61-4.04-1.61-.55-1.39-1.34-1.76-1.34-1.76-1.09-.75.08-.73.08-.73 1.2.08 1.84 1.23 1.84 1.23 1.07 1.84 2.81 1.31 3.5 1 .1-.78.42-1.31.76-1.61-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.14-.3-.54-1.52.1-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 3-.4c1.02 0 2.04.13 3 .4 2.28-1.55 3.29-1.23 3.29-1.23.64 1.66.24 2.88.12 3.18.77.84 1.23 1.91 1.23 3.22 0 4.61-2.81 5.63-5.48 5.92.43.37.81 1.1.81 2.22v3.29c0 .32.21.69.82.57C20.56 21.8 24 17.3 24 12c0-6.63-5.37-12-12-12z"/></svg>
+          Download ZIP from GitHub
+        </a>
+        <p class="install-cta-note">Free &middot; Open source &middot; No account needed</p>
+      </div>
+
+      <div class="install-steps">
+
+        <div class="install-step">
+          <div class="install-step-num">1</div>
+          <div class="install-step-body">
+            <h3>Download the ZIP file</h3>
+            <p>Click the button above to download <strong>Tim_the_time_Extension.zip</strong> from GitHub Releases. This is the complete source code — every file is open for you to inspect.</p>
+            <div class="install-code">&#128193; Tim_the_time_Extension.zip — fully open source</div>
+          </div>
+        </div>
+
+        <div class="install-step-line"></div>
+
+        <div class="install-step">
+          <div class="install-step-num">2</div>
+          <div class="install-step-body">
+            <h3>Extract the ZIP to a local folder</h3>
+            <p>Right-click the downloaded file and choose <strong>"Extract All"</strong> (Windows) or double-click (Mac). Place it somewhere permanent on your computer.</p>
+            <div class="install-code">Right-click &rarr; Extract All &rarr; Choose folder &rarr; Extract</div>
+          </div>
+        </div>
+
+        <div class="install-step-line"></div>
+
+        <div class="install-step">
+          <div class="install-step-num">3</div>
+          <div class="install-step-body">
+            <h3>Open the Extensions page in your browser</h3>
+            <p>Type the address in your browser's address bar and press Enter:</p>
+            <div class="install-code-block">
+              <span class="code-label">Chrome &amp; Brave</span>
+              <code>chrome://extensions</code>
+            </div>
+            <div class="install-code-block">
+              <span class="code-label">Microsoft Edge</span>
+              <code>edge://extensions</code>
+            </div>
+          </div>
+        </div>
+
+        <div class="install-step-line"></div>
+
+        <div class="install-step">
+          <div class="install-step-num">4</div>
+          <div class="install-step-body">
+            <h3>Turn on Developer Mode</h3>
+            <p>In the <strong>top-right corner</strong> of the Extensions page, flip the <strong>"Developer mode"</strong> toggle ON. This lets your browser load extensions from local folders.</p>
+            <div class="install-tip">&#128161; <strong>Why Developer Mode?</strong> Tim is open-source and not yet on the Chrome Web Store. This toggle simply allows local folder installs &mdash; it does not reduce your browser's security.</div>
+          </div>
+        </div>
+
+        <div class="install-step-line"></div>
+
+        <div class="install-step">
+          <div class="install-step-num">5</div>
+          <div class="install-step-body">
+            <h3>Click "Load unpacked" and select the folder</h3>
+            <p>A <strong>"Load unpacked"</strong> button appears in the top-left. Click it, then select the <strong>Tim_the_time_Extension</strong> folder you extracted in step 2.</p>
+            <div class="install-code">Load unpacked &rarr; Select Tim_the_time_Extension &rarr; Open</div>
+          </div>
+        </div>
+
+        <div class="install-step-line"></div>
+
+        <div class="install-step install-step--success">
+          <div class="install-step-num install-step-num--done">&#10003;</div>
+          <div class="install-step-body">
+            <h3>Tim is active! &#127881;</h3>
+            <p>The Tim clock icon appears in your toolbar. Browse YouTube, Instagram or Facebook — Tim starts tracking immediately. First wellness reminder in 40 minutes!</p>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="trust-badges">
+        <div class="trust-badge">&#128269; Open source &mdash; inspect every line on GitHub</div>
+        <div class="trust-badge">&#128274; No server &mdash; all data stays in your browser</div>
+        <div class="trust-badge">&#128244; Works offline &mdash; no internet required</div>
+        <div class="trust-badge">&#128465; Uninstall anytime &mdash; zero residue</div>
+      </div>
+
+    </div>
+  </section>
+
+
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-logo">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+        Tim
+      </div>
+      <p class="footer-tagline">Stay focused. Stay healthy.</p>
+      <p class="footer-copy">© 2025 Tim Extension. Built with ❤️ for your wellbeing. Open source.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

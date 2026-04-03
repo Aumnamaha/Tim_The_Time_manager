@@ -1,0 +1,198 @@
+/* =========================================
+   TIM POPUP — WARM CREAM / SANDAL PALETTE
+   Same 1:3:8 palette as the landing page
+   ========================================= */
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap');
+
+:root {
+  --white:         #FFFFFF;
+  --off-white:     #FAF8F5;
+  --cream-light:   #F5EAD9;
+  --cream:         #EED9BB;
+  --sandal-light:  #E4C99A;
+  --sandal:        #C08B5C;
+  --sandal-dark:   #A0714A;
+  --sandal-glow:   rgba(192, 139, 92, 0.3);
+  --text-dark:     #2D1F0F;
+  --text-body:     #5C4033;
+  --text-muted:    #9C7B6A;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Outfit', sans-serif;
+  background-color: var(--off-white);
+  color: var(--text-dark);
+  width: 340px;
+  min-height: 400px;
+  overflow-x: hidden;
+}
+
+/* -- CONTAINER -- */
+.container {
+  padding: 24px;
+}
+
+/* -- HEADER (display, 3-part cream) -- */
+header {
+  text-align: center;
+  margin-bottom: 24px;
+  animation: fadeInDown 0.5s ease;
+}
+
+.header-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.header-logo svg {
+  width: 30px;
+  height: 30px;
+  color: var(--sandal);
+}
+
+header h1 {
+  margin: 0;
+  font-size: 26px;
+  font-weight: 700;
+  color: var(--sandal);
+  font-family: 'Outfit', sans-serif;
+  letter-spacing: -0.5px;
+}
+
+.subtitle {
+  margin: 4px 0 0;
+  font-size: 12px;
+  color: var(--text-muted);
+  font-style: italic;
+}
+
+/* -- STATS CARD (display, 3-part cream) -- */
+.stats-card {
+  background: var(--white);
+  border-radius: 16px;
+  padding: 20px;
+  border: 1px solid var(--cream);
+  box-shadow: 0 4px 16px rgba(192, 139, 92, 0.08);
+  animation: slideUpFade 0.5s 0.1s ease both;
+}
+
+.stats-card h2 {
+  margin: 0 0 14px;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: var(--text-muted);
+  font-family: 'Outfit', sans-serif;
+  font-weight: 600;
+  border-bottom: 1px solid var(--cream-light);
+  padding-bottom: 12px;
+}
+
+#stats-container {
+  min-height: 100px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 16px;
+}
+
+.stat-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 14px;
+  background: var(--cream-light);
+  border-radius: 10px;
+  border: 1px solid var(--cream);
+  transition: all 0.2s ease;
+}
+
+.stat-row:hover {
+  background: var(--cream);
+  transform: scale(1.02);
+}
+
+.domain-name {
+  font-weight: 600;
+  color: var(--text-dark);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  text-transform: capitalize;
+}
+
+.domain-name img {
+  width: 16px;
+  height: 16px;
+  border-radius: 4px;
+}
+
+/* -- TIME VALUE (interactive, 8-part sandal) -- */
+.time-spent {
+  font-family: monospace;
+  font-size: 15px;
+  color: var(--sandal);
+  font-weight: 700;
+  background: var(--white);
+  padding: 3px 10px;
+  border-radius: 6px;
+  border: 1px solid var(--cream);
+}
+
+.total-summary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 14px;
+  border-top: 1px solid var(--cream-light);
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text-body);
+}
+
+/* -- TOTAL TIME (interactive, 8-part sandal) -- */
+#total-time {
+  font-size: 16px;
+  font-family: monospace;
+  font-weight: 700;
+  color: var(--sandal);
+  background: var(--cream-light);
+  padding: 4px 12px;
+  border-radius: 8px;
+  border: 1px solid var(--cream);
+}
+
+/* -- FOOTER -- */
+footer {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 11px;
+  color: var(--text-muted);
+  font-style: italic;
+}
+
+/* -- LOADING -- */
+.loading {
+  text-align: center;
+  color: var(--text-muted);
+  font-size: 14px;
+  font-style: italic;
+  padding: 20px 0;
+}
+
+/* -- ANIMATIONS -- */
+@keyframes fadeInDown {
+  from { opacity: 0; transform: translateY(-12px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideUpFade {
+  from { opacity: 0; transform: translateY(16px); }
+  to { opacity: 1; transform: translateY(0); }
+}
